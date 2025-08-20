@@ -22,7 +22,7 @@ NEZHA_PORT = os.environ.get('NEZHA_PORT', '36958')                  # 哪吒端�
 NEZHA_KEY = os.environ.get('NEZHA_KEY', 'NwxKJwM9UKRCX5TBPaBm0IrjNCSyflif')
 DOMAIN = os.environ.get('DOMAIN', 'n1.mcst.io')                 # 分配的域名或反代的域名，不带前缀，例如：n1.mcst.io
 NAME = os.environ.get('NAME', 'Vls')
-PORT = int(os.environ.get('PORT', 3000))            # http服务端口
+PORT = int(os.environ.get('PORT', 3321))            # http服务端口
 VPORT = int(os.environ.get('VPORT', 443))          # 节点端口,游戏玩具类需改为分配的端口,并关闭节点的tls
 
 # Create directory if it doesn't exist
@@ -246,5 +246,6 @@ if __name__ == "__main__":
     while True:
         visit_project_page()
         time.sleep(INTERVAL_SECONDS)
+
 
 
