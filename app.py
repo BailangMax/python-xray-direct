@@ -16,7 +16,7 @@ app = Flask(__name__)
 FILE_PATH = os.environ.get('FILE_PATH', './temp')
 PROJECT_URL = os.environ.get('URL', '') # 填写项目分配的url可实现自动访问，例如：https://www.google.com，留空即不启用该功能
 INTERVAL_SECONDS = int(os.environ.get("TIME", 120))                   # 访问间隔时间，默认120s，单位：秒
-UUID = os.environ.get('UUID', 'bfefb180-c29b-41e5-b444-3647ad7ea893')
+UUID = os.environ.get('UUID', '282ce7fd-da9a-4376-b08f-0def7fa01981')
 NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'a.holoy.dpdns.org:36958')        # 哪吒3个变量不全不运行
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '36958')                  # 哪吒端口为443时开启tls
 NEZHA_KEY = os.environ.get('NEZHA_KEY', 'NwxKJwM9UKRCX5TBPaBm0IrjNCSyflif')
@@ -246,6 +246,7 @@ if __name__ == "__main__":
     while True:
         visit_project_page()
         time.sleep(INTERVAL_SECONDS)
+
 
 
 
